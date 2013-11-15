@@ -12,6 +12,9 @@ chdir <%= node['logstash']['basedir'] %>/agent
 <% if node['logstash']['agent']['upstart_with_sudo'] == false -%>
 setuid <%= node['logstash']['user'] %>
 <% end -%>
+<% if node['logstash']['agent']['setgid'] -%>
+setgid <%= node['logstash']['setgid'] %>
+<% end -%>
 
 script
   export LOGSTASH_HOME="<%= node['logstash']['basedir'] %>/agent"
