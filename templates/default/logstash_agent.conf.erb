@@ -13,7 +13,7 @@ chdir <%= node['logstash']['basedir'] %>/agent
 setuid <%= node['logstash']['user'] %>
 <% end -%>
 <% if node['logstash']['agent']['setgid'] -%>
-setgid <%= node['logstash']['setgid'] %>
+setgid <%= node['logstash']['agent']['setgid'] %>
 <% end -%>
 
 script
