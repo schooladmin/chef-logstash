@@ -1,4 +1,4 @@
-name             "sa-logstash"
+name             "logstash"
 maintainer       "John E. Vincent"
 maintainer_email "lusis.org+github.com@gmail.com"
 license          "Apache 2.0"
